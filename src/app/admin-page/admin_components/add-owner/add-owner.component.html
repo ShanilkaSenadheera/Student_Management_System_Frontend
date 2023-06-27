@@ -1,0 +1,195 @@
+<!-- <div class="header">
+  <h1>ADD OWNER</h1>
+</div>
+<div class="container">
+  <form [formGroup] ="ownerForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input formControlName="firstName" placeholder="First Name"
+      [(ngModel)]="owner.firstName" name="firstName"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('firstName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('firstName')?.errors?.['required']" class="invalid-feedback">
+            First Name is required.
+          </div>
+      </div> -->
+
+
+
+      <!-- <form [formGroup]="receptionForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input formControlName="firstName" placeholder="First Name"
+          [(ngModel)]="reception.firstName" name="firstName"
+            [ngClass]="{'is-invalid': submitted && receptionForm.get('firstName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('firstName')?.errors?.['required']" class="invalid-feedback">
+            First Name is required.
+          </div>
+        </div> -->
+
+  <!-- <div class="form-group">
+    <label>Last Name</label>
+    <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+      [(ngModel)]="owner.lastName" name="lastName"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('lastName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('lastName')?.errors?.['required']" class="invalid-feedback">
+            Last Name is required.
+          </div>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Email"
+      [(ngModel)]="owner.email" name="email"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('email')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('email')?.errors?.['required']" class="invalid-feedback">
+            Email is required.
+          </div>
+          <div *ngIf="submitted && ownerForm.get('email')?.errors?.['email']" class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+  </div>
+  <div class="form-group">
+    <label>NIC</label>
+    <input type="text" class="form-control" id="nic" placeholder="NIC"
+      [(ngModel)]="owner.nic" name="nic"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('nic')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('nic')?.errors?.['required']" class="invalid-feedback">
+            NIC is required.
+          </div>
+  </div>
+  <div class="form-group">
+    <label>Telephone Number</label>
+    <input type="tel" class="form-control" id="telNo" placeholder="Telephone Number"
+      [(ngModel)]="owner.telNo" name="telNo"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('telNo')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('telNo')?.errors?.['required']" class="invalid-feedback">
+            Telephone Number is required.
+          </div>
+  </div>
+  <div class="form-group">
+    <label>Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Address"
+      [(ngModel)]="owner.address" name="address"
+      [ngClass]="{'is-invalid': submitted && ownerForm.get('address')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('address')?.errors?.['required']" class="invalid-feedback">
+            Address is required.
+          </div>
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password"
+    [(ngModel)]="owner.password" name="password"
+    [ngClass]="{'is-invalid': submitted && ownerForm.get('password')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('password')?.errors?.['required']" class="invalid-feedback">
+            Password is required.
+          </div>
+    </div> -->
+    <!-- <div class="form-group">
+      <button type="submit" class="btn btn-primary">Register</button>
+    </div> 
+</form> 
+</div> -->
+
+<h1 class="header">ADD OWNER</h1>
+<div class="container">
+  <div class="row">
+      <form [formGroup]="ownerForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input formControlName="firstName" placeholder="First Name"
+          [(ngModel)]="owner.firstName" name="firstName"
+            [ngClass]="{'is-invalid': submitted && ownerForm.get('firstName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && ownerForm.get('firstName')?.errors?.['required']" class="invalid-feedback">
+            First Name is required.
+          </div>
+        </div>
+        <!-- <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input formControlName="lastName" placeholder="Last Name"
+          [(ngModel)]="reception.lastName" name="lastName"
+          [ngClass]="{'is-invalid': submitted && receptionForm.get('lastName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('lastName')?.errors?.['required']" class="invalid-feedback">
+            Last Name is required.
+          </div>
+        </div>
+       <div class="form-group">
+          <label for="email">Email</label>
+          <input formControlName="email" placeholder="Email"
+          [(ngModel)]="reception.email" name="email"
+            [ngClass]="{'is-invalid': submitted && receptionForm.get('email')?.errors}" type="email" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('email')?.errors?.['required']" class="invalid-feedback">
+            Email is required.
+          </div>
+          <div *ngIf="submitted && receptionForm.get('email')?.errors?.['email']" class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nic">NIC</label>
+          <input formControlName="nic" placeholder="NIC"
+          [(ngModel)]="reception.nic" name="nic"
+          [ngClass]="{'is-invalid': submitted && receptionForm.get('nic')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('nic')?.errors?.['required']" class="invalid-feedback">
+            NIC is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="telNo">Telephone Number</label>
+          <input formControlName="telNo" placeholder="Telephone Number"
+          [(ngModel)]="reception.telNo" name="telNo"
+          [ngClass]="{'is-invalid': submitted && receptionForm.get('telNo')?.errors}"
+            type="tel" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('telNo')?.errors?.['required']" class="invalid-feedback">
+            Telephone Number is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input formControlName="address" placeholder="Address"
+          [(ngModel)]="reception.address" name="address"
+          [ngClass]="{'is-invalid': submitted && receptionForm.get('address')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('address')?.errors?.['required']" class="invalid-feedback">
+            Address is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="salary">Salary</label>
+          <input formControlName="salary" placeholder="Salary"
+          [(ngModel)]="reception.salary" name="salary"
+          [ngClass]="{'is-invalid': submitted && receptionForm.get('salary')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('address')?.errors?.['required']" class="invalid-feedback">
+            Salary is required.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input formControlName="password" placeholder="Password"
+            [(ngModel)]="reception.password" name="password"
+            [ngClass]="{'is-invalid': submitted && receptionForm.get('password')?.errors}" type="password" class="form-control"/>
+          <div *ngIf="submitted && receptionForm.get('password')?.errors?.['required']" class="invalid-feedback">
+            Password is required.
+          </div>
+          <div *ngIf="submitted && receptionForm.get('password')?.errors?.['minlength']" class="invalid-feedback">
+            Password should be at least 6 characters long.
+          </div>
+        </div>  -->
+       <div class="form-group">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div> 
+      </form>
+    </div>
+</div>

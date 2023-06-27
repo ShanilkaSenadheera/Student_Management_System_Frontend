@@ -1,0 +1,87 @@
+.table{
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    text-align: center;
+}
+
+.h4, h4{
+    text-align: center;
+    margin-top: 7%;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.btn-outline-primary{
+  padding-left: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 7px;
+  color: white;
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+th:last-of-type {
+  border-top-right-radius: 10px;
+}
+tr:last-of-type td:first-of-type {
+  border-bottom-left-radius: 10px;
+}
+tr:last-of-type td:last-of-type {
+  border-bottom-right-radius: 10px;
+}
+
+.modal-table.td{
+  padding-right: 100px;
+}
+
+.modal-footer{
+  text-align: left;
+  align-items: center;
+}
+.left-content {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  text-align: left;
+  float: left;
+  margin-right: 10px;
+}
+
+.data-label{
+  font-weight: 800;
+}
+
+.data-item{
+  display: flex;
+}
+
+.data-item > div {
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.mon_selector{
+  display: flex;
+  border: solid;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+
+.mon_selector button,label{
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.mon_selector button{
+  border: none;
+  padding: 0;
+  border-radius: 4px;
+
+}

@@ -1,0 +1,32 @@
+<main>
+    <div class="navBar">
+        <div class="topSpace"> </div>
+
+        <a routerLink="student-dashboard" (click)="selectedComponent('dashboard')">
+            <div [ngClass]="activeComponent==='dashboard' ? 'selected' : 'selection'"><i class="bi bi-speedometer"></i>&nbsp;&nbsp; Dashboard</div>
+        </a>
+
+        <a routerLink="student-profile" (click)="selectedComponent('myProfile')">
+        <div [ngClass]="activeComponent==='myProfile' ? 'selected' : 'selection'"><i class="bi bi-person-circle"></i>&nbsp;&nbsp; My Profile</div>
+        </a>
+
+        <a routerLink="student-class" (click)="selectedComponent('myClasses')">
+        <div [ngClass]="activeComponent==='myClasses' ? 'selected' : 'selection'"><i class="bi bi-book"></i>&nbsp;&nbsp; My Classes</div>
+        </a>
+ 
+        <a routerLink="student-enroll" (click)="selectedComponent('enroll')">
+        <div [ngClass]="activeComponent==='enroll' ? 'selected' : 'selection'"><i class="bi bi-plus-circle"></i>&nbsp;&nbsp; Enroll to a Class</div>
+        </a>
+
+        <a routerLink="student-paymentInfo" (click)="selectedComponent('payments')">
+        <div [ngClass]="activeComponent==='payments' ? 'selected' : 'selection'"><i class="bi bi-credit-card"></i>&nbsp;&nbsp; Payments</div>
+        </a>
+
+        <a routerLink="student-notification" (click)="selectedComponent('notification')">
+        <div [ngClass]="activeComponent==='notification' ? 'selected' : 'selection'"><i class="bi bi-bell"></i>&nbsp;&nbsp; Notification</div>
+        </a>
+        <app-account-info></app-account-info>        
+        
+    </div>
+    
+</main>

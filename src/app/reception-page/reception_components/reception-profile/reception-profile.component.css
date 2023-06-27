@@ -1,0 +1,151 @@
+/* .fa-circle-user {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left: 775px;
+    top: 50px;
+}
+
+.info{
+    position: absolute;
+    top: 65px;
+    left: 845px;
+}
+
+.topic{
+    position: absolute;
+    top: 35px;
+    left: 845px;
+    font-size: 20px;
+}
+.basic {
+    position: absolute;
+    width: 640px;
+    height: 400px;
+    left: 640px;
+    top: 120px;
+
+    background: #FFFDFD;
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+.contact{
+    position: absolute;
+    width: 640px;
+    height: 200px;
+    left: 640px;
+    top: 550px;
+    
+    background: #FFFDFD;
+    border: 2px solid #000000;
+    border-radius: 17px;
+}
+
+button{
+    border: none;
+    background-color: transparent;
+} */
+
+/* Style for the profile container */
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the user icon */
+  .fa-circle-user {
+    color: #333;
+    font-size: 4rem;
+  }
+  
+  /* Style for the topic (name) */
+  .topic {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style for the info text */
+  .info {
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  /* Style for the table */
+  .basic {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  /* Style for table cells */
+  .basic td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style for table cells containing buttons */
+  .basic td button {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  /* Style for table cell links */
+  .basic td a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Style for the lock icons */
+  .fa-lock {
+    color: rgb(5, 0, 0);
+  }
+  
+  /* Style for the change password button */
+  .change-password {
+    margin-top: 20px;
+  }
+  
+  .change-password button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .change-password button:hover {
+    background-color: #555;
+  }
+ 
+  button{
+    border: none;
+    background-color: transparent;
+}
+.basic tr::after {
+  height: 40px; /* Adjust the height to increase or decrease the spacing */
+  content: "";
+  display: block;
+}
+
+.basic td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left; /* Horizontal alignment: center */
+  vertical-align: middle; /* Vertical alignment: middle */
+}
+
+/* Style for the profile container */
+.profile {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 20px;
+  text-align: center;
+  border: 3px solid #070000;
+  border-radius: 10px; /* Add rounded borders */
+  border-top: 10px;
+}

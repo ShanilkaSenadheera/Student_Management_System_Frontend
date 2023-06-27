@@ -1,0 +1,102 @@
+<h1 class="header">ADD TEACHER</h1>
+<div class="container">
+  <div class="row">
+      <form [formGroup]="teacherForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input formControlName="firstName" placeholder="First Name"
+          [(ngModel)]="teacher.firstName" name="firstName"
+            [ngClass]="{'is-invalid': submitted && teacherForm.get('firstName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('firstName')?.errors?.['required']" class="invalid-feedback">
+            First Name is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input formControlName="lastName" placeholder="Last Name"
+          [(ngModel)]="teacher.lastName" name="lastName"
+          [ngClass]="{'is-invalid': submitted && teacherForm.get('lastName')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('lastName')?.errors?.['required']" class="invalid-feedback">
+            Last Name is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input formControlName="email" placeholder="Email"
+          [(ngModel)]="teacher.email" name="email"
+          [ngClass]="{'is-invalid': submitted && teacherForm.get('email')?.errors}" 
+            type="email" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('email')?.errors?.['required']" class="invalid-feedback">
+            Email is required.
+          </div>
+          <div *ngIf="submitted && teacherForm.get('email')?.errors?.['email']" class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="nic">NIC</label>
+          <input formControlName="nic" placeholder="NIC"
+          [(ngModel)]="teacher.nic" name="nic"
+          [ngClass]="{'is-invalid': submitted && teacherForm.get('nic')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('nic')?.errors?.['required']" class="invalid-feedback">
+            NIC is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mobileNumber">Mobile Number</label>
+          <input formControlName="mobileNumber" placeholder="Mobile Number"
+          [(ngModel)]="teacher.mobileNumber" name="mobileNumber"
+          [ngClass]="{'is-invalid': submitted && teacherForm.get('mobileNumber')?.errors}"
+            type="tel" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('mobileNumber')?.errors?.['required']" class="invalid-feedback">
+            Mobile Number is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input formControlName="address" placeholder="Address"
+          [(ngModel)]="teacher.address" name="address"
+          [ngClass]="{'is-invalid': submitted && teacherForm.get('address')?.errors}"
+            type="text" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('address')?.errors?.['required']" class="invalid-feedback">
+            Address is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input formControlName="password" placeholder="Password"
+            [ngClass]="{'is-invalid': submitted && teacherForm.get('password')?.errors}" type="password" class="form-control"/>
+          <div *ngIf="submitted && teacherForm.get('password')?.errors?.['required']" class="invalid-feedback">
+            Password is required.
+          </div>
+          <div *ngIf="submitted && teacherForm.get('password')?.errors?.['minlength']" class="invalid-feedback">
+            Password should be at least 6 characters long.
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Register</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+

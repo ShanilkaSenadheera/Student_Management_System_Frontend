@@ -1,0 +1,176 @@
+<div class="newPageContent">
+    <p><i class="fa-solid fa-circle-user fa-4x"></i>
+    <p class="topic">Welcome John Deo</p>
+    <p class="info">You can view/edit your account information from here.</p>
+    <table class="basic">
+        <tr>
+            <td>First Name</td>
+            <td></td>
+            <td><button type="button" (click)="openFirstName()" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href=""><i class="fa-regular fa-pen-to-square" ></i></a></button>
+            <div class="modal" id="myModal1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" (click)="closeFirstName()" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Current First Name</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                    <p>New First Name</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="closeFirstName()" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </td>
+          </tr>
+        <tr>
+          <td>Last Name</td>
+          <td></td>
+          <td><button type="button" (click)="openLastName()"><a href=""><i class="fa-regular fa-pen-to-square" ></i></a></button>
+          <div class="modal" id="myModal2">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title">Modal Heading</h4>
+                  <button type="button" (click)="closeLastName()" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Current First Name</p>
+                  <input type="text" class="form-control" id="lastName"> 
+                  <p>New First Name</p>
+                  <input type="text" class="form-control" id="lastName"> 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" (click)="closeLastName()" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </td>
+        </tr>
+        <tr>
+            <td>Student ID</td>
+            <td></td>
+            <td><i class="fa-solid fa-lock"></i></td>
+        </tr>
+        <tr>
+            <td>Birthday</td>
+            <td></td>
+            <td><button type="button" (click)="openDoB()"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></button>
+            <div class="modal" id="myModal3">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" (click)="closeDoB()" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Current First Name</p>
+                    <input type="date" class="form-control" id="lastName"> 
+                    <p>New First Name</p>
+                    <input type="date" class="form-control" id="lastName"> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="closeDoB()" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <button type="button" (click)="openPassword"><a href="#">Click here to change your password.</a></button>
+            <div class="modal" id="myModal4">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" (click)="closePassword()" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Current Password</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                    <p>New Password</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="closePassword()" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td></td>
+            <td><i class="fa-solid fa-lock"></i></td>
+        </tr>
+        <tr>
+            <td>Contact Number</td>
+            <td></td>
+            <td><button type="button" (click)="openPhoneNumber()"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></button>
+            <div class="modal" id="myModal4">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" (click)="closePhoneNumber()" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Current Phone Number</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                    <p>New Password</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="closePhoneNumber()" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td></td>
+            <td><button type="button" (click)="openAddress()"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></button>
+            <div class="modal" id="myModal5">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" (click)="closeAddress()" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>Current Address</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                    <p>New Address</p>
+                    <input type="text" class="form-control" id="lastName"> 
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="closeAddress()" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              </td>
+    </table>
+    <table class="guird">
+        <h3>Parent/Guirdian Info</h3>
+        <tr>
+            <td>Name</td>
+            <td></td>
+            <td><button type="button"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></button> </td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td></td>
+            <td><button type="button"><a href=""><i class="fa-regular fa-pen-to-square"></i></a></button></td>
+         </tr>
+    </table>
+</div>

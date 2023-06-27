@@ -1,0 +1,39 @@
+<main>
+    <div class="navBar">
+        <div class="topSpace"> </div>
+        <a routerLink="reception-dashboard" (click)="selectedComponent('dashboard')">
+            <div [ngClass]="activeComponent==='dashboard' ? 'selected' : 'selection'"><i class="bi bi-speedometer"></i>&nbsp;&nbsp; Dashboard</div>
+        </a>
+        
+        <a routerLink="reception-profile" (click)="selectedComponent('myProfile')">
+            <div [ngClass]="activeComponent==='myProfile' ? 'selected' : 'selection'"><i class="bi bi-person-circle"></i>&nbsp;&nbsp; My Profile</div>
+        </a>
+        <a routerLink="manage-students" (click)="selectedComponent('manageStudents')">
+            <div [ngClass]="activeComponent==='manageStudents' ? 'selected' : 'selection'"><i class="bi bi-person-exclamation"></i>&nbsp;&nbsp; Manage Students</div>
+        </a>
+        <a routerLink="pending-approvals" (click)="selectedComponent('pendingApprovals')">
+            <div [ngClass]="activeComponent==='pendingApprovals' ? 'selected' : 'selection'"><i class="bi bi-person-plus"></i>&nbsp;&nbsp; Pending Approvals</div>
+        </a>
+        <a routerLink="record-payment" (click)="selectedComponent('recordPayments')">
+            <div [ngClass]="activeComponent==='recordPayments' ? 'selected' : 'selection'"><i class="bi bi-credit-card"></i>&nbsp;&nbsp; Record Payments</div>
+        </a>
+        <a routerLink="time-tables" (click)="selectedComponent('timeTables')">
+            <div [ngClass]="activeComponent==='timeTables' ? 'selected' : 'selection'"><i class="bi bi-calendar"></i>&nbsp;&nbsp; Time Tables</div>
+        </a>
+        <a routerLink="mark-attendance" (click)="selectedComponent('attendance')">
+            <div [ngClass]="activeComponent==='attendance' ? 'selected' : 'selection'"><i class="bi bi-card-checklist"></i>&nbsp;&nbsp; Mark Attendance</div>
+        </a>
+        <a routerLink="change-class-fees" (click)="selectedComponent('classFees')">
+            <div [ngClass]="activeComponent==='classFees' ? 'selected' : 'selection'"><i class="bi bi-cash-coin"></i>&nbsp;&nbsp; Change Class Fees</div>
+        </a>
+        <a routerLink="issue-tutes" (click)="selectedComponent('tutes')">
+            <div [ngClass]="activeComponent==='tutes' ? 'selected' : 'selection'"><i class="bi bi-journal-arrow-up"></i>&nbsp;&nbsp; Issue Tutes</div>
+        </a>
+        <a routerLink="reception-notifications" (click)="selectedComponent('notification')">
+            <div [ngClass]="activeComponent==='notification' ? 'selected' : 'selection'"><i class="bi bi-bell"></i>&nbsp;&nbsp; Notification</div>
+        </a>
+        <app-account-info></app-account-info>        
+        
+    </div>
+    
+</main>

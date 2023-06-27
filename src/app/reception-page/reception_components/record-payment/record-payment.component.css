@@ -1,0 +1,31 @@
+.h4, h4{
+    text-align: left;
+    margin-top: 6%;
+    margin-left: 5%;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    width: 100%;
+}
+
+.form-control, mr-sm-2{
+    width: 20%;
+    margin-left: 1%;
+}
+
+.form-inline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label1{
+    font-weight: bold;
+}
+
+.table{
+    width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 5%;
+}
